@@ -1,0 +1,197 @@
+html {
+    font-size: 10px;
+    font-family: myfont;
+}
+body {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+}
+/* Modifier */
+.underline {
+    text-decoration: none;
+}
+/* Block */
+
+/* header */
+.header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: rgb(0,60,113);
+    padding: 9px 62px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+/* logoweb */
+.logoweb {
+    margin-right: 30px;
+}
+/* nav */
+.nav {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.nav__item {
+    padding: 20px 13px;
+    border-bottom: 2px solid transparent;
+}
+.nav__item:hover {
+    border-bottom: 2px solid #f79321;
+    
+}
+.nav__item:hover >a {
+    color: #26ded6;
+}
+.nav__item:last-child {
+    position: relative;
+}
+.nav__item:last-child:hover > .subnav {
+    display: block;
+    z-index: 5;
+}
+.nav__item:last-child > i {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav__item > a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+/* subnav */
+.subnav {
+    position: absolute;
+    top: 65px;
+    background-color: rgb(0,60,113);
+    width: 150px;
+    list-style: none;
+    padding: 10px;
+    display: none;
+}
+.subnav__item {
+    width: 100%;
+    padding: 10px;
+}
+.subnav__item >a {
+    color: #fff;
+    text-transform: capitalize;
+}
+.subnav__item:hover >a {
+    color: #ccc;
+}
+/* login */
+.login {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.login > i {
+    border: 2px solid #fff;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 5px;
+}
+.login__account {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+/* hotline */
+
+.hotline__phone {
+    font-size: 2.6rem;
+    color: #f79321;
+    font-weight: bold;
+}
+.a {
+    margin-top: 5px;
+    display: flex;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.hotline__time {
+    margin-right: 10px;
+}
+/* banner */
+.banner {
+    width: 100%;
+    border: 2px solid red;
+    margin-top: 65px;
+    position: relative;
+}
+.banner__video {
+    object-fit: none;
+}
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+}
+/*media  */
+.media {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* tour hot */
+.tour-hot {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* donors */
+.donors {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* tour sale */
+.tour-sale {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* favourite */
+.favourite {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* blog */
+.blog {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* feedback */
+.feedback {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/*  contact */
+.contact {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
+/* footer */
+.footer {
+    width: 100%;
+    border: 2px solid red;
+    height: 200px;
+}
