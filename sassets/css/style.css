@@ -265,7 +265,7 @@ body {
     width: 100%;
     padding: 12px 0px;
     height: auto;
-    border: 2px solid green;
+ 
 }
 .sale__title {
     margin-bottom: 22px;
@@ -442,8 +442,7 @@ body {
 /* special */
 .special {
     width: 100%;
-    height: 300px;
-    border: 2px solid red;
+    height: auto;
     padding: 30px 0px;
 }
 .special__title {
@@ -456,29 +455,167 @@ body {
 .special__item {
     display: flex;
     margin-bottom: 27px;
-    /* box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); */
 }
 .special__item > img {
     width: 25%;
     border-radius: 10px 0px 0px 10px;
 }
+.special__item:hover {
+    transform: scale(1.01);
+    transition: ease .5s;
+}
+/* info */
 .special__info {
     width: 50%;
-    border: 1px solid green;
     padding: 20px;
+    position: relative;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
 }
+.special__info::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 85%;
+    background-color: #6c757d;
+    position: absolute;
+    top: 7.5%;
+    right: 0;
+}
+.special__info-combo {
+    background-color: #2d4271;
+    display:inline-block;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+}
+.special__info-name {
+    color: #2d4271;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    line-height: 2rem;
+    font-family: 700;
+}
+.special__info-name:hover {
+    color: #4d4aef;
+}
+.star {
+    margin-bottom: 16px;
+    color: #fdc432;
+}
+.special__info-endow {
+    margin-bottom: 20px;
+    color: #6c757d;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    display: block;
+}
+.special__info-fb {
+    display: flex;
+    margin-bottom: 35px;
+}
+.special__point {
+    width: 40px;
+    height: 25px;
+    background-color: #fdc432;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+.special__point::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fdc432;
+    position: absolute;
+    bottom: -5px;
+    left: -6.5px;
+    transform: rotate(135deg);
+}
+.special__info-cmt {
+    font-weight: 700;
+    color: #2d4271;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.special__info-address {
+    color: #4d4aef;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}
+/* price */
 .special__price {
     width: 25%;
-    border: 1px solid green;
     padding-right: 20px;
     text-align: right;
     border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
+    
+}
+.special__price-sum  {
+    margin-bottom: 16px;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.special__price-sum > span {
+    color: red;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+.special__price-btn > a {
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 3.2px;
+    border: 1px solid ;
+    margin-left: 40px;
+    text-transform: capitalize;
+
+}
+.special__price-btn > a:last-child {
+    background-color: red;
+    color: #fff;
+}
+.special__price-btn > a:last-child:hover {
+    background-color: rgba(253,80,86,0.8);
+}
+.special__price-btn > a:first-child {
+    border-color: #4d4aef;
+    background-color: #fff;
+    color: #4d4aef;
+}
+.special__price-btn > a:first-child:hover {
+    background-color: #4d4aef;
+    color: #fff;
+}
+.special__price > span {
+    margin-top: 16px;
+    color: #4d4aef;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
 }
 /* tour hot */
 .tour {
     width: 100%;
     border: 2px solid red;
-    height: 200px;
+    height: auto;
+    
 }
 /* donors */
 .donors {
