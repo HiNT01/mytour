@@ -258,8 +258,166 @@ body {
 /* tour sale */
 .toursale {
     width: 100%;
-    border: 2px solid red;
     height:auto;
+    padding: 48px 65px;
+}
+.sale__title {
+    margin-bottom: 22px;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: #2d4271;
+}
+.sale__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* item */
+.sale__item {
+    width: calc((100% - 52px)/3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.sale__item:hover {
+    box-shadow: 0 1rem 1.5rem rgba(0,0,0,.15);
+    transform: scale(1.02);
+    transition: ease 0.3s;
+}
+/* top */
+.sale__item-top {
+    position: relative;
+    width: 100%;
+}
+.sale__item-top > img {
+    width: 100%;
+    border-radius: 3px 3px 0px 0px;
+    height: 100%;
+    
+}
+.sale__evaluate > i {
+    position: absolute;
+    border-color: #ccc;
+    border-radius: 8px;
+    top: 15px;
+    left: 12px;
+    font-size: 3rem;
+    color: #fff;
+}
+.sale__point {
+    width: 40px;
+    height: 25px;
+    background-color: #fdc432;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    right: 12px;
+}
+.value {
+    width: 112px;
+    height: 67px;
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 48px;
+    right: 12px;
+    text-transform: capitalize;
+}
+.type {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px 2px 0px 0px;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #4d4aef;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* text */
+.sale__item-content {
+    background-color: #fff;
+    
+    padding: 16px;
+}
+.sale__time {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: #2d4272;
+}
+.sale__name {
+    margin: 4px 0px;
+    color: #2d4272;
+    font-weight: 700;
+    line-height: 2rem;
+    height: 45px;
+}
+.sale__name:hover {
+    color: #4d4aef;
+}
+.sale__code {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+.sale__start {
+    margin: 10px 0px 18px;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    display: block;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__left {
+    display: flex;
+    flex-direction: column;
+}
+.price__sale {
+    font-size: 1.8rem;
+    color: #fd5056;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+.price__right {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    line-height: 2.4rem;
+    background-color: #fd5056;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sale__btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #fd5056;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.sale__btn:hover {
+    background-color: rgba(253,80,86,0.8);
 }
 /* tour hot */
 .tour {
