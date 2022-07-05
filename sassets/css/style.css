@@ -613,9 +613,132 @@ body {
 /* tour hot */
 .tour {
     width: 100%;
-    border: 2px solid red;
     height: auto;
+    padding: 20px 65px;
+    background-color:rgba(236,240,245,0.5);
     
+}
+.tour__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 22px;
+    color: #3f3b3b;
+}
+.tour__slogan {
+    color: #717484;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    display: block;
+}
+.tour__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tour__item {
+    width: calc((100% - 60px)/3);
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.tour__item:hover {
+    background-color: rgba(71,194,213,0.2);
+    transform: scale(1.05);
+    transition: ease .3s;
+}
+.tour__item-img {
+    position: relative;
+}
+.tour__item-title {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+.tour__item-title::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid rgb(156,0,0);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 1px;
+    transform: rotate(-135deg);
+    z-index: -1;
+}
+.tour__item-img > img {
+    width: 100%;
+}
+/* tour__content */
+.tour__content {
+    padding: 11px 15px;
+
+}
+.tour__content-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #003c71;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tour__content-endow {
+    margin-bottom: 20px;
+    display: flex;
+}
+.tour__content-schedule > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.tour__content-schedule > ul li {
+    width: 45%;
+    color: #00abc5;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+
+}
+.tour__content-price {
+    float: right;
+    text-align: right;
+}
+.tour__content-price > del {
+    color: rgb(130,130,130);
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+.tour__content-price > span {
+    display: block;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #f79321;
+    font-weight: bold;
+}
+
+.tours__btn {
+    padding: 10px 20px;
+    border: 1px solid rgb(38,190,214);
+    background-color: #fff;
+    color: rgb(38,190,214);
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+.tours__btn:hover {
+    background-color: rgb(38,190,214);
+    color: #fff;
+
 }
 /* donors */
 .donors {
