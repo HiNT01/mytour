@@ -265,7 +265,8 @@ body {
     width: 100%;
     padding: 12px 0px;
     height: auto;
- 
+    display: flex;
+    flex-direction:column;
 }
 .sale__title {
     margin-bottom: 22px;
@@ -286,6 +287,8 @@ body {
     flex-direction: column;
     border-radius: 4px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    text-decoration: none;
+    color:#000;
 }
 .sale__item:hover {
     box-shadow: 0 1rem 1.5rem rgba(0,0,0,.15);
@@ -365,6 +368,7 @@ body {
     font-size: 1.3rem;
     line-height: 2.4rem;
     color: #2d4272;
+
 }
 .sale__name {
     margin: 4px 0px;
@@ -434,15 +438,23 @@ body {
     font-weight: 700;
     line-height: 3rem;
     text-transform: capitalize;
-    float:right;
-    display: block;
     margin-top: 30px;
+    max-width: 250px;
+    text-align: center;
+}
+.sale__btn:hover {
+    background-color: #ccc;
 }
 /* special */
 .special {
     width: 100%;
     height: auto;
     padding: 30px 0px;
+}
+.special__list {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
 }
 .special__title {
     color: #2d4271;
@@ -452,6 +464,7 @@ body {
     font-weight: 700;
 }
 .special__item {
+    width:100%;
     display: flex;
     margin-bottom: 27px;
 }
@@ -578,28 +591,33 @@ body {
     line-height: 2.4rem;
     font-weight: 700;
 }
-.special__price-btn > a {
+.special__price-btn {
+    display: flex;
+   justify-content: flex-end;
+   margin-bottom: 15px;
+}
+.special__price-btn > button {
     padding: 4px 8px;
     display: inline-block;
     border-radius: 3.2px;
     border: 1px solid ;
-    margin-left: 40px;
+    margin-left: 20px;
     text-transform: capitalize;
-
+    cursor: pointer;
 }
-.special__price-btn > a:last-child {
+.special__price-btn > button:last-child {
     background-color: red;
     color: #fff;
 }
-.special__price-btn > a:last-child:hover {
+.special__price-btn > button:last-child:hover {
     background-color: rgba(253,80,86,0.8);
 }
-.special__price-btn > a:first-child {
+.special__price-btn > button:first-child {
     border-color: #4d4aef;
     background-color: #fff;
     color: #4d4aef;
 }
-.special__price-btn > a:first-child:hover {
+.special__price-btn > button:first-child:hover {
     background-color: #4d4aef;
     color: #fff;
 }
@@ -641,6 +659,7 @@ body {
     cursor: pointer;
     background-color: #fff;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .tour__item:hover {
