@@ -1,0 +1,59 @@
+.hotel-sale {
+    width:95%;
+    margin: 10px auto;
+    background-color: rgb(255,245,247);
+    border-radius: 12px;
+    padding:56px 21px;
+}
+.hotel-sale__title {
+    margin-bottom:65px;
+    font-size:2.4rem;
+    line-height:3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.hotel-sale__list {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.hotel-sale__item {
+    width:calc((100% - 78px)/4);
+    margin-bottom:30px;
+}
+.hotel-sale__img {
+    position: relative;
+    width: 100%;
+}
+.hotel-sale__img > img {
+    width:100%;
+    border-radius:8px 8px 0px 0px;
+}
+.hotel-sale__img > i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size:3rem;
+    color:#000;
+}
+.hotel-sale__content {
+    width: 100%;
+    border-radius:0px 0px 8px 8px;
+    background-color: #fff;
+    padding: 12px;
+}
+.hotel-sale__address {
+    margin-bottom:20px;
+    text-transform: capitalize;
+    font-size:2rem;
+    line-height:3rem;
+    font-weight: 400;
+    color:#000;
+}
+.hotel__name {
+    font-size:1.6rem;
+    line-height:2rem;
+    color:#000;
+    font-weight:600;
+    margin-bottom:4px;
+}

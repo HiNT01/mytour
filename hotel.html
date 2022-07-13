@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt tour du lịch trong nước và tour du lịch quốc tế trực tuyến với iVIVU.com</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="./sassets/css/reset.css">
+    <link rel="stylesheet" href="./sassets/css/font.css">
+    <link rel="stylesheet" href="./sassets/css/style.css">
+    <link rel="stylesheet" href="./sassets/css/hotel.css">
+</head>
+<body>
+    <div class="main">
+       <!-- header -->
+       <div class="header">
+        <a href="./index.html" class="logoweb">
+          <img src="./sassets/img/logo.svg" alt="">
+        </a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="./hotel.html" class="underline">khách sạn</a>
+          </li>
+          <li class="nav__item">
+            <a href="./tour.html" class="underline">tours</a>
+          </li>
+          <li class="nav__item">
+            <a href="./ticket.html" class="underline">vé máy bay</a>
+          </li>
+          <li class="nav__item">
+            <a href="./news.html" class="underline">cẩm nang du lịch</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <ul class="subnav">
+              <li class="subnav__item">
+                <a href="./login.html" class="underline">đăng nhập</a>
+              </li>
+              <li class="subnav__item">
+                <a href="./intro.html" class="underline">giới thiệu</a>
+              </li>
+              <li class="subnav__item">
+                <a href="#" class="underline">tư vấn</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="./login.html" class="login underline">
+          <i class="fa-solid fa-user"></i>
+          <span class="login__account">tài khoản</span>
+        </a>
+        <div class="hotline">
+          <span class="hotline__phone">
+            <i class="fa-solid fa-phone"></i>
+            1900 1870</span>
+          <div class="a">
+            <span class="hotline__time">
+              <i class="fa-solid fa-clock"></i>
+              7h30 - 21h</span>
+            <span class="hotline__address">
+              <i class="fa-solid fa-location-dot"></i>
+              hà nội</span>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+    
+      <!-- banner -->
+      <div class="banner">
+        <video class="banner__video" width="100%" height="460px" type="video/mp4" autoplay="" muted="" loop="">
+          <source src="https://storage.googleapis.com/tripi-assets/mytour/videos/video_bg_mytour.mov">Your browser does not
+          support the video tag.
+        </video>
+        <div class="banner__content">
+          <h1 class="bannner__title">Trải nghiệm kỳ nghỉ tuyệt vời</h1>
+          <p class="banner__desciption">
+            Combo khách sạn - vé máy bay - đưa đón sân bay giá tốt nhất</p>
+          <form action="#" class="form">
+            <input type="text" placeholder="bạn muốn đi đâu ?" class="form__address">
+            <div class="form__time">
+              <input type="date" name="" id="" class="form__date">
+              <input type="date" name="" id="" class="form__date">
+              <div class="time__count">
+                <span>1</span>
+                <i class="fa-solid fa-moon"></i>
+              </div>
+            </div>
+    
+    
+    
+            <input type="text" placeholder="số phòng" class="form__info">
+            <button type="submit" class="form__btn">Tìm</button>
+          </form>
+        </div>
+      </div>
+      <!-- end banner -->
+    
+      <!-- media -->
+      <div class="media">
+        <div class="media__item">
+          <img src="./sassets/img/icon_total_hotel.svg" alt="">
+          <div class="media__content">
+            <h3 class="media__title">Hơn 8000+ khách sạn dọc Việt Nam</h3>
+            <p class="media__descrption">Hàng nghìn khách sạn, đặc biệt là 4 sao và 5 sao, cho phép bạn thoải mái lựa chọn,
+              giá cạnh tranh, phong phú.</p>
+          </div>
+        </div>
+        <div class="media__item">
+          <img src="./sassets/img/icon_support_247.svg" alt="">
+          <div class="media__content">
+            <h3 class="media__title">Giá tốt sát ngày</h3>
+            <p class="media__descrption">Cam kết giá tốt nhất khi đặt gần ngày cho chuyến đi của bạn.</p>
+          </div>
+        </div>
+        <div class="media__item">
+          <img src="./sassets/img/icon_payment.svg" alt="">
+          <div class="media__content">
+            <h3 class="media__title">Hỗ trợ khách hàng 24/7</h3>
+            <p class="media__descrption">Chat là có, gọi là nghe, không quản đêm hôm, ngày nghỉ và ngày lễ.</p>
+          </div>
+        </div>
+        <div class="media__item">
+          <img src="./sassets/img/icon_best_price.svg" alt="">
+          <div class="media__content">
+            <h3 class="media__title">Thanh toán dễ dàng, đa dạng</h3>
+            <p class="media__descrption">Bao gồm thêm chuyển khoản ngân hàng và tiền mặt tại cửa hàng.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end media -->
+      <!-- hotel of address -->
+      <div class="address">
+
+      </div>
+        <!-- end hotel of address -->
+        <!-- hotel sale -->
+        <div class="hotel-sale">
+            <h2 class="hotel-sale__title">Khách sạn giá tốt chỉ có trên Mytour</h2>
+            <div class="hotel-sale__list">
+              <a href="#" class="hotel-sale__item underline">
+                <div class="hotel-sale__img">
+                  <img src="./sassets/img/hotel1.jfif" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="hotel-sale__content">
+                  <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="hotel-sale__address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>nha trang</span>
+                  </div>
+                  <div class="special__info-fb">
+                    <span class="special__point">9.8</span>
+                    <span class="special__info-cmt">tuyệt vời</span>
+                  </div>
+              
+                  <div class="price__left">
+                    <span class="price__cost">Giá <del>12,590,000₫</del>
+                    </span>
+                    <span class="price__sale">
+                      11,090,000₫
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="hotel-sale__item underline">
+                <div class="hotel-sale__img">
+                  <img src="./sassets/img/hotel1.jfif" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="hotel-sale__content">
+                  <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="hotel-sale__address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>nha trang</span>
+                  </div>
+                  <div class="special__info-fb">
+                    <span class="special__point">9.8</span>
+                    <span class="special__info-cmt">tuyệt vời</span>
+                  </div>
+              
+                  <div class="price__left">
+                    <span class="price__cost">Giá <del>12,590,000₫</del>
+                    </span>
+                    <span class="price__sale">
+                      11,090,000₫
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="hotel-sale__item underline">
+                <div class="hotel-sale__img">
+                  <img src="./sassets/img/hotel1.jfif" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="hotel-sale__content">
+                  <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="hotel-sale__address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>nha trang</span>
+                  </div>
+                  <div class="special__info-fb">
+                    <span class="special__point">9.8</span>
+                    <span class="special__info-cmt">tuyệt vời</span>
+                  </div>
+              
+                  <div class="price__left">
+                    <span class="price__cost">Giá <del>12,590,000₫</del>
+                    </span>
+                    <span class="price__sale">
+                      11,090,000₫
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="hotel-sale__item underline">
+                <div class="hotel-sale__img">
+                  <img src="./sassets/img/hotel1.jfif" alt="">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="hotel-sale__content">
+                  <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="hotel-sale__address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>nha trang</span>
+                  </div>
+                  <div class="special__info-fb">
+                    <span class="special__point">9.8</span>
+                    <span class="special__info-cmt">tuyệt vời</span>
+                  </div>
+              
+                  <div class="price__left">
+                    <span class="price__cost">Giá <del>12,590,000₫</del>
+                    </span>
+                    <span class="price__sale">
+                      11,090,000₫
+                    </span>
+                  </div>
+                </div>
+              </a>
+                <!--  -->
+
+                <a href="#" class="hotel-sale__item underline">
+                  <div class="hotel-sale__img">
+                    <img src="./sassets/img/hotel1.jfif" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="hotel-sale__content">
+                    <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="hotel-sale__address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>nha trang</span>
+                    </div>
+                    <div class="special__info-fb">
+                      <span class="special__point">9.8</span>
+                      <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+                
+                    <div class="price__left">
+                      <span class="price__cost">Giá <del>12,590,000₫</del>
+                      </span>
+                      <span class="price__sale">
+                        11,090,000₫
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="hotel-sale__item underline">
+                  <div class="hotel-sale__img">
+                    <img src="./sassets/img/hotel1.jfif" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="hotel-sale__content">
+                    <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="hotel-sale__address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>nha trang</span>
+                    </div>
+                    <div class="special__info-fb">
+                      <span class="special__point">9.8</span>
+                      <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+                
+                    <div class="price__left">
+                      <span class="price__cost">Giá <del>12,590,000₫</del>
+                      </span>
+                      <span class="price__sale">
+                        11,090,000₫
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="hotel-sale__item underline">
+                  <div class="hotel-sale__img">
+                    <img src="./sassets/img/hotel1.jfif" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="hotel-sale__content">
+                    <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="hotel-sale__address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>nha trang</span>
+                    </div>
+                    <div class="special__info-fb">
+                      <span class="special__point">9.8</span>
+                      <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+                
+                    <div class="price__left">
+                      <span class="price__cost">Giá <del>12,590,000₫</del>
+                      </span>
+                      <span class="price__sale">
+                        11,090,000₫
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="hotel-sale__item underline">
+                  <div class="hotel-sale__img">
+                    <img src="./sassets/img/hotel1.jfif" alt="">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="hotel-sale__content">
+                    <h3 class="hotel__name">Khách sạn The Empyrean Nha Trang</h3>
+                    <div class="star">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="hotel-sale__address">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>nha trang</span>
+                    </div>
+                    <div class="special__info-fb">
+                      <span class="special__point">9.8</span>
+                      <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+                
+                    <div class="price__left">
+                      <span class="price__cost">Giá <del>12,590,000₫</del>
+                      </span>
+                      <span class="price__sale">
+                        11,090,000₫
+                      </span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hotel-hot">
+
+        </div>
+    
+    
+    
+      <!-- favourite -->
+      <div class="favourite">
+    
+        <h2 class="favourite__title">Điểm đến yêu thích</h2>
+    
+    
+        <div class="favourite__list">
+          <a href="#" class="favourite__item item--1 underline">
+            <img src="./sassets/img/nha-trang.jpg" alt="">
+            <span class="favourite__name">nha trang</span>
+          </a>
+          <a href="#" class="favourite__item item--2 underline">
+            <img src="./sassets/img/danang.jpg" alt="">
+            <span class="favourite__name">đà nẵng</span>
+          </a>
+          <a href="#" class="favourite__item item--3 underline">
+            <img src="./sassets/img/ha-long.jpg" alt="">
+    
+            <span class="favourite__name">hạ long</span>
+          </a>
+          <a href="#" class="favourite__item item--4 underline">
+            <img src="./sassets/img/hoi-an.jpg" alt="">
+    
+            <span class="favourite__name">hội an</span>
+          </a>
+          <a href="#" class="favourite__item item--5 underline">
+            <img src="./sassets/img/phu-quoc.jpg" alt="">
+    
+            <span class="favourite__name">phú quốc</span>
+          </a>
+          <a href="#" class="favourite__item item--6 underline">
+            <img src="./sassets/img/vung-tau.jpg" alt="">
+    
+            <span class="favourite__name">bà rịa - vũng tàu</span>
+          </a>
+          <a href="#" class="favourite__item item--7 underline">
+            <img src="./sassets/img/hochiminh.jpg" alt="">
+    
+            <span class="favourite__name">hồ chí minh</span>
+          </a>
+          <a href="#" class="favourite__item item--8 underline">
+            <img src="./sassets/img/hanoi.jpg" alt="">
+    
+            <span class="favourite__name">hà nội</span>
+          </a>
+          <a href="#" class="favourite__item item--9 underline">
+            <img src="./sassets/img/da-lat.jpg" alt="">
+    
+            <span class="favourite__name">đà lạt</span>
+          </a>
+          <a href="#" class="favourite__item item--10 underline">
+            <img src="./sassets/img/phan-thiet.jpg" alt="">
+    
+            <span class="favourite__name">phan thiết</span>
+          </a>
+          <a href="#" class="favourite__item item--11 underline">
+            <img src="./sassets/img/sa-pa.jpg" alt="">
+    
+            <span class="favourite__name">sapa</span>
+          </a>
+          <a href="#" class="favourite__item item--12 underline">
+            <img src="./sassets/img/hai-phong.jpg" alt="">
+            <span class="favourite__name">hải phòng</span>
+          </a>
+        </div>
+    
+      </div>
+      <!-- end favourite -->
+    
+      <!-- blog -->
+      <div class="blog">
+        <h2 class="blog__title">Xem những bài blog mới nhất</h2>
+        <div class="blog__list">
+          <a href="#" class="blog__item">
+            <img src="./sassets/img/blog1.jpeg" alt="">
+            <h3 class="blog__name">
+              Ở nhà vẫn vui với xu hướng du lịch online
+            </h3>
+          </a>
+          <!--  -->
+          <a href="#" class="blog__item">
+            <img src="./sassets/img/blog2.jpeg" alt="">
+            <h3 class="blog__name">
+              Đặt khách sạn cách ly tại TP.HCM
+            </h3>
+          </a>
+          <!--  -->
+          <a href="#" class="blog__item">
+            <img src="./sassets/img/blog3.jpeg" alt="">
+            <h3 class="blog__name">
+              Trọn bộ cẩm nang an toàn khi đi xét nghiệm Covid
+            </h3>
+          </a>
+          <!--  -->
+          <a href="#" class="blog__item">
+            <img src="./sassets/img/blog4.jpeg" alt="">
+            <h3 class="blog__name">
+              Cập nhật: Lịch bay quốc tế và cẩm nang du lịch quốc tế 2021
+            </h3>
+          </a>
+        </div>
+      </div>
+      <!--end blog  -->
+    
+      <!-- contact -->
+      <div class="contact">
+        <div class="contact__title">
+          <img src="./sassets/img/icon_mail_red.svg" alt="">
+          <div class="contact__content">
+            <h4>Bạn muốn tiết kiệm tới 50% khi đặt phòng khách sạn, vé máy bay?</h4>
+            <p>Nhập số điện thoại để chúng tôi có thể gửi đến bạn những chương trình khuyến mại mới nhất!</p>
+          </div>
+        </div>
+        <form action="#">
+          <input type="text" placeholder="nhập số điện thoại">
+          <button class="contact__btn" type="submit">
+            đăng kí
+          </button>
+        </form>
+      </div>
+      <!-- end contact -->
+    
+      <!-- footer -->
+      <div class="footer">
+        <a href="#" class="logoweb">
+          <img src="./sassets/img/logo.svg" alt="">
+        </a>
+        <div class="footer__list">
+          <div class="footer__address">
+            <h3>Công ty cổ phần du lịch Việt Nam VNTravel</h3>
+            <p>
+              Tổng đài chăm sóc: 1900 2083
+              <br>
+
+  Email: hotro@mytour.vn
+  <br>
+
+        Văn phòng Hà Nội: Tầng 11, Tòa Peakview, 36 Hoàng Cầu, Đống Đa
+<br>
+      Văn phòng HCM: Tầng 6, Tòa Nhà Central Park, 117 Nguyễn Du, Q.1
+<br>
+Mytour Store: 168 Xã Đàn, Đống Đa, Hà Nội
+            </p>
+          </div>
+          <div class="footer__policy">
+            <h3>Chính sách & Quy định</h3>
+            <ul>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Điều khoản và điều kiện</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Quy định về thanh toán</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Quy định về xác nhận thông tin đặt phòng</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Chính sách về hủy đặt phòng và hoàn trả tiền</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Chính sách bảo mật thông tin</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Quy chế hoạt động</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Quy trình giải quyết tranh chấp, khiếu nại</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline" >Điều lệ bay quốc nội</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end footer -->
+    
+      <!-- end main -->
+    </div>
+</body>
+</html>
