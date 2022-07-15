@@ -1,10 +1,10 @@
 .reult{
-    margin-top: 65px;
+
     width: 100%;
     height: auto;
     background-color: rgb(244,248,250);
-    padding: 12px 44px;
-    margin-bottom: 30px;
+    padding:44px;
+    
 }
 
 .search{
@@ -24,6 +24,7 @@
 }
 .map__page:hover {
     color: royalblue;
+
 }
 .reult__key {
     color:#1a202c;
@@ -61,6 +62,7 @@
     text-transform: capitalize;
     color: aqua;
     cursor: pointer;
+    text-shadow:rgba(0, 0, 0, 0.6) 0px 1px 2px;
 }
 .reult__filter-bottom {
     border: 2px solid #ccc;
@@ -74,6 +76,7 @@
     color: #1a202c;
     text-transform: capitalize;
     margin: 10px 0px;
+    
 }
 .reult__filter-bottom label {
     text-transform: capitalize;
@@ -184,5 +187,93 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
+}
+.reult__filter-sub {
+    padding: 15px 25px;
+    border: none;
+    background-color: #74B6C7;
+    color: #fff;
+    min-width: 100px;
+    cursor: pointer;
+}
+.reult__filter-bottom  input,
+.reult__filter-bottom label{
+    cursor: pointer;
+}
+.search__address {
+    padding:44px 65px;
+    width:100%;
+    background-color: #ccc;
+
+}
+.search__address-items {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+    transition: height 1s;
+
+}
+.search__address-top {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width:100%;
+    text-align:left;
+    padding:10px 50px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+.search__address-title{
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #4e4e4e; 
+}
+.search__address-list {
+    padding: 20px;
+    list-style:none;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width:100%;
+    position:absolute;
+    display:flex;
+    top: 0;
+    left: 0;
+    transform:translateY(-100%);
+    z-index: -1;
+   
+}
+.search__address-item > a {
+    color: rgba(64,166,242,0.6);
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.search__address-item {
+    width: calc((100% - 50px)/6);
+    margin-bottom: 10px;
+    max-height: 20px;
+    overflow: hidden;
+}
+.search__address-items:hover {
+    height: 200px;
+}
+.search__address-items:hover .search__address-list {
+    animation: dropDown linear 1s  forwards;
+    z-index: 0;
+}
+.search__address-item:hover a {
+    color: rgba(64,166,242,1);
+    text-shadow: 1px 1px 1px rgba(64,166,242,1);;
+}
+@keyframes dropDown {
+    to {
+        top: 40px;
+        transform: translateY(0);
+    }
 }
 

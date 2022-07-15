@@ -1,0 +1,50 @@
+.tour-address {
+    padding: 44px 65px;
+}
+.tour-address__list {
+    display:flex;
+    justify-content:space-between;
+
+}
+.tour-address__items {
+    width:calc((100% - 60px)/3);
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.tour-address__items img {
+    width:100%;
+    height:100%;
+}
+.tour-address__item {
+    position: relative;
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+}
+.tour-address__content {
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    color:#fff;
+    text-transform:capitalize;
+    text-shadow:rgba(0, 0, 0, 0.6) 0px 0px 1px;
+}
+.tour-address__name {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    font-weight:700;
+}
+.tour-address__total {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+.tour-address__items:first-child .tour-address__item {
+    height: 100%;
+}
+.tour-address__item:hover img {
+    transform:scale(1.1);
+    transition:ease 0.5s;
+}
+

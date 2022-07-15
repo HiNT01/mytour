@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt tour du lịch trong nước và tour du lịch quốc tế trực tuyến với iVIVU.com</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="./sassets/css/reset.css">
+  <link rel="stylesheet" href="./sassets/css/font.css">
+  <!-- bootrap -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./sassets/css/style.css">
+  <link rel="stylesheet" href="./sassets/css/search.css">
+
+</head>
+
+<body>
+  <div class="main">
+    <!-- header -->
+    <div class="header">
+      <a href="./index.html" class="logoweb">
+        <img src="./sassets/img/logo.svg" alt="">
+      </a>
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="./hotel.html" class="underline">khách sạn</a>
+        </li>
+        <li class="nav__item">
+          <a href="./tour.html" class="underline">tours</a>
+        </li>
+        <li class="nav__item">
+          <a href="./ticket.html" class="underline">vé máy bay</a>
+        </li>
+        <li class="nav__item">
+          <a href="./news.html" class="underline">cẩm nang du lịch</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-ellipsis"></i>
+          <ul class="subnav">
+            <li class="subnav__item">
+              <a href="./login.html" class="underline">đăng nhập</a>
+            </li>
+            <li class="subnav__item">
+              <a href="./intro.html" class="underline">giới thiệu</a>
+            </li>
+            <li class="subnav__item">
+              <a href="#" class="underline">tư vấn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="./login.html" class="login underline">
+        <i class="fa-solid fa-user"></i>
+        <span class="login__account">tài khoản</span>
+      </a>
+      <div class="hotline">
+        <span class="hotline__phone">
+          <i class="fa-solid fa-phone"></i>
+          1900 1870</span>
+        <div class="a">
+          <span class="hotline__time">
+            <i class="fa-solid fa-clock"></i>
+            7h30 - 21h</span>
+          <span class="hotline__address">
+            <i class="fa-solid fa-location-dot"></i>
+            hà nội</span>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <div class="reult">
+        <form action="#" class="form search">
+            <input type="text" placeholder="bạn muốn đi đâu ?" class="form__address">
+            <div class="form__time">
+              <input type="date" name="" id="" class="form__date">
+              <input type="date" name="" id="" class="form__date">
+              <div class="time__count">
+                <span>1</span>
+                <i class="fa-solid fa-moon"></i>
+              </div>
+            </div>
+  
+  
+  
+            <input type="text" placeholder="số phòng" class="form__info">
+            <button type="submit" class="form__btn">Tìm</button>
+          </form>
+      <div class="map">
+        <a class="underline map__page" href="./index.html" >trang chủ ></a>
+
+        <a class="underline map__page" href="#">du bai ></a>
+        <!-- <a class="underline map__page" href="#">TP Nha Trang</a> -->
+      </div>
+      <h3 class="reult__key">
+        Tour du lịch Dubai từ Hồ Chí Minh
+      </h3>
+      <div class="reult__content">
+        <div class="reult__filter">
+            <div class="reult__filter-top">
+                <h3 class="reult__filter-title">bộ lọc</h3>
+                <button  class="reult__filter-clear">xóa tất cả lọc</button>
+            </div>
+           <form action="#" class="reult__filter-bottom">
+            <div class="reult__filter-price">
+                <h3 class="reult__filter-name">giá</h3>
+                <input type="text" placeholder="từ">
+                <input type="text" placeholder="đến">
+            </div>
+            <!-- <form action="#" class="reult__filter-hotel">
+                <h3 class="reult__filter-name">hạng khách sạn</h3>
+                <input type="checkbox" name="hotel" id="star4" value="">
+                <label for="star4" class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </label>
+                <br>
+                <input type="checkbox" name="hotel" id="star3" value="">
+                <label for="star3" class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                </label>
+                <br>
+                <input type="checkbox" name="hotel" id="star2" value="">
+                <label for="star2" class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                </label>
+            </form> -->
+            <div class="reult__filter-evaluate">
+                <h3 class="reult__filter-name">người dùng đánh giá</h3>
+                <input type="checkbox" name="hotel" id="tuyet-voi" value="">
+                <label for="tuyet-voi">Tuyệt vời (9.0+)</label>
+                <br>
+                <input type="checkbox" name="hotel" id="rat-tot" value="">
+                <label for="rat-tot">Tuyệt vời (8.0+)</label>
+                <br>
+                <input type="checkbox" name="hotel" id="tot" value="">
+                <label for="tot">tốt (7.0+)</label>
+            </div>
+            <div class="reult__filter-address">
+                <h3 class="reult__filter-name">loại tour</h3>
+                <input type="checkbox" name="hotel" id="hn" value="">
+                <label for="hn">trong nước</label>
+                <br>
+                <input type="checkbox" name="hotel" id="dn" value="">
+                <label for="dn">nước ngoài</label>
+                <br>
+                <input type="checkbox" name="hotel" id="nt" value="">
+                <label for="nt">trong nước cao cấp</label>
+                <br>
+                
+               
+            </div>
+            <input type="submit" name="" id="" value="Lọc" class="reult__filter-sub">
+           </form>
+        </div>
+        
+        <div class="reult__info">
+            <a href="#" class="reult__item underline">
+                <div class="reult__img">
+                    <img src="./sassets/img/khu-nghi-duong-six-senses-ninh-van-bay-nha-trang-dulichchat-2.jpg" alt="">
+                    <div class="reult__img-control">
+                        <div class="related__btns">
+                           
+                            <button class="related__btn prev"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="related__btn next"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <ul class="related__dots">
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+              
+                <div class="relut__intro">
+                    <h3 class="reult__name">
+                        Six Senses Ninh Vân Bay
+                    </h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="special__info-fb">
+                        <span class="special__point">9.8</span>
+                        <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+
+                    <div class="reult__address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        ninh van, thị xã ninh hòa
+                    </div>
+                   
+
+                </div>
+                <div class="tour__content-price reult__price">
+                    <del>9.990.000 VND</del>
+                    <span class="tour__content-sale">9.190.000 VND</span>
+                  </div>
+            </a>
+            <a href="#" class="reult__item underline">
+                <div class="reult__img">
+                    <img src="./sassets/img/khu-nghi-duong-six-senses-ninh-van-bay-nha-trang-dulichchat-2.jpg" alt="">
+                    <div class="reult__img-control">
+                        <div class="related__btns">
+                           
+                            <button class="related__btn prev"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="related__btn next"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <ul class="related__dots">
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+              
+                <div class="relut__intro">
+                    <h3 class="reult__name">
+                        Six Senses Ninh Vân Bay
+                    </h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="special__info-fb">
+                        <span class="special__point">9.8</span>
+                        <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+
+                    <div class="reult__address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        ninh van, thị xã ninh hòa
+                    </div>
+                   
+
+                </div>
+                <div class="tour__content-price reult__price">
+                    <del>9.990.000 VND</del>
+                    <span class="tour__content-sale">9.190.000 VND</span>
+                  </div>
+            </a>
+            <a href="#" class="reult__item underline">
+                <div class="reult__img">
+                    <img src="./sassets/img/khu-nghi-duong-six-senses-ninh-van-bay-nha-trang-dulichchat-2.jpg" alt="">
+                    <div class="reult__img-control">
+                        <div class="related__btns">
+                           
+                            <button class="related__btn prev"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="related__btn next"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <ul class="related__dots">
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+              
+                <div class="relut__intro">
+                    <h3 class="reult__name">
+                        Six Senses Ninh Vân Bay
+                    </h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="special__info-fb">
+                        <span class="special__point">9.8</span>
+                        <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+
+                    <div class="reult__address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        ninh van, thị xã ninh hòa
+                    </div>
+                   
+
+                </div>
+                <div class="tour__content-price reult__price">
+                    <del>9.990.000 VND</del>
+                    <span class="tour__content-sale">9.190.000 VND</span>
+                  </div>
+            </a>
+            <a href="#" class="reult__item underline">
+                <div class="reult__img">
+                    <img src="./sassets/img/khu-nghi-duong-six-senses-ninh-van-bay-nha-trang-dulichchat-2.jpg" alt="">
+                    <div class="reult__img-control">
+                        <div class="related__btns">
+                           
+                            <button class="related__btn prev"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="related__btn next"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <ul class="related__dots">
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+              
+                <div class="relut__intro">
+                    <h3 class="reult__name">
+                        Six Senses Ninh Vân Bay
+                    </h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="special__info-fb">
+                        <span class="special__point">9.8</span>
+                        <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+
+                    <div class="reult__address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        ninh van, thị xã ninh hòa
+                    </div>
+                   
+
+                </div>
+                <div class="tour__content-price reult__price">
+                    <del>9.990.000 VND</del>
+                    <span class="tour__content-sale">9.190.000 VND</span>
+                  </div>
+            </a>
+            <a href="#" class="reult__item underline">
+                <div class="reult__img">
+                    <img src="./sassets/img/khu-nghi-duong-six-senses-ninh-van-bay-nha-trang-dulichchat-2.jpg" alt="">
+                    <div class="reult__img-control">
+                        <div class="related__btns">
+                           
+                            <button class="related__btn prev"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="related__btn next"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                        <ul class="related__dots">
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                            <li class="related__dot"></li>
+                        </ul>
+                       
+                    </div>
+                </div>
+              
+                <div class="relut__intro">
+                    <h3 class="reult__name">
+                        Six Senses Ninh Vân Bay
+                    </h3>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="special__info-fb">
+                        <span class="special__point">9.8</span>
+                        <span class="special__info-cmt">tuyệt vời</span>
+                    </div>
+
+                    <div class="reult__address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        ninh van, thị xã ninh hòa
+                    </div>
+                   
+
+                </div>
+                <div class="tour__content-price reult__price">
+                    <del>9.990.000 VND</del>
+                    <span class="tour__content-sale">9.190.000 VND</span>
+                  </div>
+            </a>
+        </div>
+      </div>
+    </div>
+    <!-- lọc  addres -->
+    <div class="search__address">
+
+      <div class="search__address-items">
+        <button class="search__address-top">
+          <i class="fa-solid fa-angles-down"></i>
+          <span class="search__address-title">tours trong nước</span>
+        </button>
+        <ul class="search__address-list">
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Nam Du</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Buôn Mê Thuột</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Miền Tây</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Lý Sơn</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Quảng Ngãi</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Điệp Sơn</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Long An</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Ninh Thuận</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Điện Biên</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Sơn La</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Cà Mau</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Đắk Nông</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Quảng Ninh</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Sóc Trăng</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Cao Bằng</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Bắc Kạn</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Phú Quý</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Lâm Đồng</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Bình Thuận</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Vinh</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Bình Liêu</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Trà Vinh</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Lạng Sơn</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Kon Tum</a>
+          </li>
+        </ul>
+      </div>
+      <div class="search__address-items">
+        <button class="search__address-top">
+          <i class="fa-solid fa-angles-down"></i>
+          <span class="search__address-title">tours nước ngoài</span>
+        </button>
+        <ul class="search__address-list">
+          <li class="search__address-item">
+            <a href="#" class="underline">tour châu á</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Châu Âu</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Paris</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Canada</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Cộng Hòa Séc</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Cộng Hòa Áo</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Hungary</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Đức - FRA</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Pháp - CDG</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Úc</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Anh</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Thổ Nhĩ Kỳ</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Thụy Sỹ</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Monaco</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Thụy Sỹ - Ý - Áo - Hungary - Slovakia - Séc - Đức</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Bỉ</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Ý</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Luxembourg</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Argentina</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Bali</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Nam Phi</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Alaska</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Châu Phi</a>
+          </li>
+          <li class="search__address-item">
+            <a href="#" class="underline">Tour Nepal</a>
+          </li>
+        </ul>
+      </div>
+
+     
+    
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <a href="#" class="logoweb">
+          <img src="./sassets/img/logo.svg" alt="">
+        </a>
+        <div class="footer__list">
+          <div class="footer__address">
+            <h3>Công ty cổ phần du lịch Việt Nam VNTravel</h3>
+            <p>
+              Tổng đài chăm sóc: 1900 2083
+              <br>
+  
+              Email: hotro@mytour.vn
+              <br>
+  
+              Văn phòng Hà Nội: Tầng 11, Tòa Peakview, 36 Hoàng Cầu, Đống Đa
+              <br>
+              Văn phòng HCM: Tầng 6, Tòa Nhà Central Park, 117 Nguyễn Du, Q.1
+              <br>
+              Mytour Store: 168 Xã Đàn, Đống Đa, Hà Nội
+            </p>
+          </div>
+          <div class="footer__policy">
+            <h3>Chính sách & Quy định</h3>
+            <ul>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Điều khoản và điều kiện</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Quy định về thanh toán</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Quy định về xác nhận thông tin đặt phòng</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Chính sách về hủy đặt phòng và hoàn trả tiền</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Chính sách bảo mật thông tin</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Quy chế hoạt động</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Quy trình giải quyết tranh chấp, khiếu nại</a>
+              </li>
+              <li class="footer__policy-item ">
+                <a href="#" class="underline">Điều lệ bay quốc nội</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <!-- end main -->
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </html>
