@@ -1,0 +1,41 @@
+.navbar {
+    width:100%;
+    margin-top: 75px;
+    height: auto;
+    background-color: #fff;
+    list-style: none;
+    display:flex;
+    padding:0px 50px;
+}
+.navbar__item {
+    padding:15px 20px;
+}
+.navbar__item > a {
+    text-decoration:none;
+    text-transform:capitalize;
+    font-weight:700;
+    color:#000;
+}
+.navbar__item:hover a {
+    color:rgb(80, 65, 191)
+}
+.detail {
+    background-color: #ccc;
+    width:100%;
+    padding:44px 65px;
+}
+.detail__map-item {
+    text-decoration:none;
+    margin-right:10px;
+    color:#000;
+    font-weight:500;
+    text-transform:capitalize;
+}
+.detail__title {
+    margin-top:30px;
+    color:rgb(0, 60, 113);
+    font-size:3.6rem;
+    text-transform:capitalize;
+    font-weight: bold;
+    line-height:4rem;
+}

@@ -97,6 +97,7 @@
 .reult__info{
     width: calc(70% - 24px);
     height: auto;
+    
 }
 .reult__item {
     display: flex;
@@ -107,6 +108,14 @@
     border-radius: 8px;
     color:#1a202c;
     position: relative;
+    box-shadow: 0px 3px 6px #ccc;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+   
+}
+.reult__item:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 4px 6px #ccc;
 }
 .reult__img {
     width: 25%;
@@ -205,6 +214,13 @@
     width:100%;
     background-color: #ccc;
 
+}
+.reult__bed {
+    margin-top:15px;
+}
+.reult__bed > span {
+    text-transform:capitalize;
+    color:#ccc;
 }
 .search__address-items {
     width: 100%;

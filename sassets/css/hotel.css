@@ -12,11 +12,16 @@
     padding:56px 21px;
 }
 .hotel-sale__title {
-    margin-bottom:65px;
+    margin-bottom:20px;
     font-size:2.4rem;
     line-height:3rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
+    /* color:linear-gradient(90deg,#ff0076,#590fb7); */
+    background: -webkit-linear-gradient(90deg,#ff0076,#590fb7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgb(0 0 0 / 10%) 0px 6px 10px;
 }
 .hotel-sale__list {
     display:flex;
@@ -26,7 +31,13 @@
 .hotel-sale__item {
     width:calc((100% - 78px)/4);
     margin-bottom:30px;
-    
+    transition: transform linear 0.2s;
+    border-radius:8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 6px 10px;
+}
+.hotel-sale__item:hover {
+    transform:scale(1.02);
+    box-shadow: rgb(0 0 0 / 10%) 0px 8px 12px;
 }
 .hotel-sale__img {
     position: relative;
@@ -77,14 +88,15 @@
 .hotel-hot {
     width:95%;
     margin: 10px auto;
-    background-color: rgb(105, 90, 221);
-    padding:10px;
+    background:linear-gradient(45deg,#cb5eee,#4be1ec);
+    padding:20px;
     position: relative;
+    border-radius:10px;
 }
 .hotel-hot__list {
     display:flex;
     justify-content:space-between;
-    padding:20px
+    padding:10px
 }
 
 .hotel-hot__control {

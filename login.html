@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="shortcut icon" href="https://res.ivivu.com/hotel/img/favicon.ico" type="image/x-icon">
+    <title>Đăng nhập</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="./sassets/css/reset.css">
     <link rel="stylesheet" href="./sassets/css/font.css">
+    <link rel="stylesheet" href="./sassets/css/grid.css">
     <link rel="stylesheet" href="./sassets/css/style.css">
     <link rel="stylesheet" href="./sassets/css/login.css">
 </head>
@@ -68,85 +70,37 @@
       </div>
     </div>
     <!-- end header -->
-    <div class="container">
-        <div class="form">
-            <h2>Login</h2>
-            <div class="input">
-                <div class="inputBox">
-                    <label for="">Username</label>
-                    <input type="text">
-                </div>
-                <div class="inputBox">
-                    <label for="">Password</label>
-                    <input type="password">
-                </div>
-                <div class="inputBox">
-                    <input type="submit" name="" value="Sign In"> 
-                </div>
-            </div>
-            <p class="forgot">Forgot Password? <a href="#">Click Here</a></p>
-            <div class="social">
-                <button><i class="fa fa-facebook" aria-hidden="true"></i><p>Signin with Facebook</p></button>
-                <button><i class="fa fa-twitter" aria-hidden="true"></i><p>Signin with Twitter</p></button>
-            </div>
+    <div class="form__wrapper">
+      <form action="#" class="form__login">
+        <h2 class="form__logi-title">
+          đăng nhập
+        </h2>
+        <div class="form__login-btns">
+          <button type="submit" class="form__login-btn form__login-btn--fb">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>facebook</span>
+          </button>
+          <button type="submit" class="form__login-btn form__login-btn--gg">
+            <i class="fa-brands fa-google"></i>
+            <span> google</span>
+          </button>
         </div>
+
+        <label for="user">Email / Số điện thoại</label>
+        <input type="text" id="user" placeholder="Email / Số điện thoại">
+        <label for="pass">Mật khẩu</label>
+        <input type="password" placeholder="Mật khẩu" id="pass">
+        <a href="#" class="underline">Quên mật khẩu?</a>
+        <button type="submit"  class="form__login-submit">
+          đăng nhập
+          <span></span><span></span><span></span><span></span>
+        </button>
+
+        <span>Chưa có tài khoản? <a href="./singin.html"> Đăng ký tại đây </a> </span>
+      </form>
     </div>
+     
       
-    
-      <!-- footer -->
-      <div class="footer">
-        <a href="#" class="logoweb">
-          <img src="./sassets/img/logo.svg" alt="">
-        </a>
-        <div class="footer__list">
-          <div class="footer__address">
-            <h3>Công ty cổ phần du lịch Việt Nam VNTravel</h3>
-            <p>
-              Tổng đài chăm sóc: 1900 2083
-              <br>
-
-  Email: hotro@mytour.vn
-  <br>
-
-        Văn phòng Hà Nội: Tầng 11, Tòa Peakview, 36 Hoàng Cầu, Đống Đa
-<br>
-      Văn phòng HCM: Tầng 6, Tòa Nhà Central Park, 117 Nguyễn Du, Q.1
-<br>
-Mytour Store: 168 Xã Đàn, Đống Đa, Hà Nội
-            </p>
-          </div>
-          <div class="footer__policy">
-            <h3>Chính sách & Quy định</h3>
-            <ul>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Điều khoản và điều kiện</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Quy định về thanh toán</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Quy định về xác nhận thông tin đặt phòng</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Chính sách về hủy đặt phòng và hoàn trả tiền</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Chính sách bảo mật thông tin</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Quy chế hoạt động</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Quy trình giải quyết tranh chấp, khiếu nại</a>
-              </li>
-              <li class="footer__policy-item ">
-                <a href="#" class="underline" >Điều lệ bay quốc nội</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- end footer -->
     
       <!-- end main -->
     </div>

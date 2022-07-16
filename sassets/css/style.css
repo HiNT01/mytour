@@ -11,6 +11,9 @@ body {
 .underline {
     text-decoration: none;
 }
+.main {
+    position: relative;
+}
 /* Block */
 
 /* header */
@@ -473,6 +476,7 @@ body {
 .special__item > img {
     width: 25%;
     border-radius: 10px 0px 0px 10px;
+    /* object-fit: cover; */
 }
 .special__item:hover {
     transform: scale(1.01);

@@ -1,148 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-.container {
+.form__wrapper {
+    background-image: url("../img/bg-login.jpg");
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: transparent;
+    padding-top: 85px;
 }
-.form
-{
-    margin: 100px auto;
-    position: relative;
-    background: #060c21;
-    border: 1px solid #000;
-    width: 350px;
-    padding: 40px 40px 60px;
+.form__login {
+    width:350px;
+    height:auto;
+    background-color: #000;
     border-radius: 10px;
-    text-align: center;
-    height: auto;
+    padding-bottom: 20px;
+    box-shadow: #000 0px 1px 4px;
 }
-.form::before
-{
-    content: '';
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    bottom: -2px;
-    left: -2px;
-    background: linear-gradient(315deg,#e91e63,#5d02ff);
-    z-index: -1;
-    transform: skew(2deg,1deg);
-    border-radius: 10px;
-}
-.form h2
-{
-    color: #fff;
+.form__logi-title {
+    font-size: 26px;
+    color:#fff;
+    line-height: 26px;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-.form .input
-{
-    margin-top: 40px;
-    text-align: left;
-}
-.form .input .inputBox
-{
-    margin-top: 10px;
-}
-.form .input .inputBox label
-{
+    text-transform: capitalize;
     display: block;
-    color: #fff;
-    margin-bottom: 5px;
-    font-size: 18px;
-    letter-spacing: 1px;
+    border-bottom: 1px solid #555863;
+    padding: 15px;
 }
-.form .input .inputBox input
-{
-    position: relative;
-    width: 100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    padding: 5px 15px;
-    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 10px;
+.form__login-btns {
+    display: flex;
+    border-bottom: 1px solid #555863;
+    padding:15px;
+    justify-content: space-between;
 }
-.form .input .inputBox input[type="submit"]
-{
-    cursor: pointer;
-    margin-top: 20px;
-    letter-spacing: 1px;
-}
-.form .input .inputBox input[type="submit"]:hover
-{
-    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
-}
-.form .input .inputBox input[type="submit"]:active
-{
-    color: rgba(255, 255, 255, 0.521);
-    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
-}
-.forgot
-{
-    margin-top: 10px;
-    color: #fff;
+.form__login-btn {
+    width:calc((100% - 30px)/2);
+    display: flex;
     font-size: 14px;
-    letter-spacing: 1px;
-}
-.forgot a
-{
-    color: #ff0800;
-}
-.social
-{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.social button
-{
-    min-width: 70%;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    padding: 5px 10px;
-    background: transparent;
-    border: 3px solid #222;
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-
-}
-.social button i
-{
-    display: flex;
+    line-height: 20px;
+    padding: 10px 20px;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-
-}
-.social button p
-{
+    border: none;
     color: #fff;
-    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form__login-btn:hover {
+  opacity:0.9;
+}
+.form__login-btn span {
     margin-left: 10px;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
 }
-.social button:hover
-{
-    background: linear-gradient(315deg,#326cd6,#5d02ff);
+.form__login-btn--fb {
+    background-color: rgb(71,89,147);
 }
-.social button:hover i
-{
-    filter: invert(1);
+.form__login-btn--gg {
+    background-color: rgb(243,74,56);
 }
-.social button:active
+.form__login label ,
+.form__login > a,
+.form__login > span
 {
-    background:linear-gradient(315deg,#5d02ff,#e91e63)
+    color:#fff;
+    margin-top: 15px;
+    display: block;
+    margin-left: 10px;
+}
+.form__login input {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 15px;
+    text-transform: capitalize;
+    outline: none;
 }
 
+.form__login-submit {
+    background-color: #000;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px rgba(0, 50, 50, 0.8);
+    width: 90%;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    
+  }
+.form__login-submit:hover {
+  background-color:rgb(71,89,147);
+}
+  .form__login-submit i { color:blueviolet}
+  .form__login-submit span {
+    position: absolute;
+    display: block;
+  }
+  .form__login-submit span:first-child {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,blue);
+  
+    /* transition: width 0.5s linear; */
+    animation: playWidth linear 2s infinite;
+  }
+  .form__login-submit span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0px;
+    background:linear-gradient(135deg,transparent,blue);
+
+  
+    /* transition: height 0.5s linear 0.5s; */
+    animation: playHeight linear 2s infinite 1s;
+  }
+  .form__login-submit span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 2px;
+    background:linear-gradient(-90deg,transparent,blue);
+    
+    /* transition: width 0.5s linear 1s; */
+    animation: playWidth linear 2s infinite ;
+  }
+  .form__login-submit span:last-child {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0px;
+    background:linear-gradient(-45deg,transparent,blue);
+
+  
+    /* transition: height 0.5s linear 1.5s; */
+    animation: playHeight linear 2s infinite 1s;
+  }
+  
+  /* .btn:hover span:nth-child(1),
+  .btn:hover span:nth-child(3) {
+    width: 100%;
+  } */
+  /* .btn:hover span:nth-child(2),
+  .btn:hover span:nth-child(4) {
+    height: 100%;
+  } */
+  
+  @keyframes playWidth {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+
+    }
+    50.01% {
+        width: 0%;
+    }
+    100%{
+        width: 0%;
+    }
+  }
+  @keyframes playHeight {
+    0% {
+      height: 5px;
+    
+    }
+    50% {
+      height: 100%;
+    
+    }
+    50.01% {
+      height: 0%;
+    
+    }
+    100% {
+      height: 0%;
+  
+    }
+  }
+  
