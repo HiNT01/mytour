@@ -1,11 +1,19 @@
+.header--detail {
+    position: static;
+}
 .navbar {
     width:100%;
-    margin-top: 75px;
     height: auto;
     background-color: #fff;
     list-style: none;
     display:flex;
     padding:0px 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border: none;
 }
 .navbar__item {
     padding:15px 20px;
@@ -23,6 +31,10 @@
     background-color: #ccc;
     width:100%;
     padding:44px 65px;
+    
+}
+.detail__content{
+    position: relative;
 }
 .detail__map-item {
     text-decoration:none;
@@ -38,4 +50,200 @@
     text-transform:capitalize;
     font-weight: bold;
     line-height:4rem;
+    margin-bottom: 20px;
+}
+.detail__text {
+    background-color: red;
+    padding: 20px 50px 20px 20px;
+    background-color: transparent;
+    
+}
+.detail__text > img {
+    width:100%;
+}
+.detail__text-intro,
+.detail__text-timeLine,
+.detail__text-visa {
+    width: 100%;
+    background-color: #fff;
+    padding:15px;
+    margin: 10px 0px;
+}
+.detail__text-timeLine h3 {
+    margin:20px 0px 30px;
+}
+.detail__text-timeLine ul,
+.detail__text-visa ul
+    {
+    list-style: none;
+}
+.detail__text-timeLine li,
+.detail__text-visa li {
+    padding: 10px 0px;
+}
+.detail__booktour {
+    background-color: #fff;
+    border-radius: 8px;
+    padding:16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    height: 70vh;
+}
+.detail__form-title {
+    color:rgb(0,60,113);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+}
+.detail__form-block {
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius:4px;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 3px 0px;
+    color:rgb(63.59.59);
+    padding:5px 10px;
+    text-transform: capitalize;
+    height:54px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.detail__form-total {
+    width:100%;
+    display: flex;
+    align-items: center;
+    color:rgb(63.59.59);
+    padding:5px 10px;
+    border: none;
+    text-transform: capitalize;
+    height:54px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.detail__form-price {
+    color:rgb(255,189,0);
+}
+.btn__requests {
+    width:100%;
+    padding:5px;
+    display:flex;
+    justify-content: space-between;
+}
+.btn__request {
+    width:calc((100% - 20px)/2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:8px;
+    border-radius: 4px;
+    text-transform:capitalize;
+    border: 1px solid rgb(247,147,33);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    cursor:pointer;
+}
+.btn__request--white {
+    color:rgb(247,147,33);
+    background-color: #fff;
+}
+.btn__request--white:hover {
+    background-color: rgb(247,147,33);
+    color: #fff;
+}
+.btn__request--yellow {
+    color: #fff;
+    background-color: rgba(247,147,33,1);
+}
+.btn__request--yellow:hover {
+    background-color: rgba(247,147,33,0.8);
+    
+}
+.detail__form-btn {
+    background-color: transparent;
+    border: none;
+    padding:5px 10px;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+.detail__form-count {
+    font-size: 2.5rem;
+
+}
+.modal {
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+    
+}
+.modal__content {
+    background-color: #fff;
+    width:350px;
+    height:500px;
+    padding:20px;
+    border-radius:8px;
+    border-top:5px solid rgb(255,189,0);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    animation: modalUp linear 2s;
+}
+.modal__title {
+    margin-top: 50px;
+    color:#3d3f47;
+    font-size:24px;
+    line-height: 25px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.modal > span {
+    color:#777;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight:300;
+    margin-bottom:20px;
+
+}
+.modal__form > label,
+.modal__form input {
+    display:block;
+    width:100%;
+    margin:10px 0px;
+}
+.modal__form button {
+    width:100%;
+    padding: 8px;
+    cursor:pointer;
+    text-transform:capitalize;
+    background-color: rgb(247,147,33);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+}
+.modal__form button:hover {
+    background-color: rgba(247,147,33,0.8);
+
+}
+.open {
+    display: flex;
+}
+.modal__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@keyframes modalUp {
+    to {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

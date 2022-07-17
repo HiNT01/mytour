@@ -14,6 +14,9 @@
     <!-- css -->
     <link rel="stylesheet" href="./sassets/css/reset.css">
     <link rel="stylesheet" href="./sassets/css/font.css">
+    <link rel="stylesheet" href="./sassets/css/grid.css">
+    <!-- css 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="./sassets/css/style.css">
     <link rel="stylesheet" href="./sassets/css/tour-detail.css">
 
@@ -23,7 +26,7 @@
 <body>
     <div class="main">
         <!-- header -->
-        <div class="header">
+        <div class="header header--detail">
             <a href="./index.html" class="logoweb">
                 <img src="./sassets/img/logo.svg" alt="">
             </a>
@@ -77,44 +80,109 @@
         <!-- navbar -->
         <ul class="navbar">
             <li class="navbar__item">
-                <a href="#">tổng quan</a>
+                <a href="#intro">tổng quan</a>
             </li>
             <li class="navbar__item">
-                <a href="#">chương trình tour</a>
+                <a href="#timeline">chương trình tour</a>
+            </li>
+           
+            <li class="navbar__item">
+                <a href="#expenses">chi phí dự kiến</a>
             </li>
             <li class="navbar__item">
-                <a href="#">lịch khởi hành</a>
+                <a href="#visa">thông tin visa</a>
             </li>
-            <li class="navbar__item">
-                <a href="#">chi phí dự kiến</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#">thông tin visa</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#">hướng dẫn viên</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#">đánh giá của khách hàng</a>
-            </li>
+          
+            
         </ul>
         <!-- navbar -->
         <!--  -->
-        <div class="detail">
+        <div class="detail gride wide">
             <div class="detail__map">
                 <a href="#" class="detail__map-item" >trang chủ > </a>
                 <a href="#" class="detail__map-item" >pháp > </a>
                 <a href="#" class="detail__map-item" > Tour Châu Âu 11N10Đ: Trải Nghiệm Pháp - Thụy Sĩ - Ý </a>
             </div>
             <h2 class="detail__title">Tour Châu Âu 11N10Đ: Trải Nghiệm Pháp - Thụy Sĩ - Ý</h2>
-            <div class="detail__content">
-                <div class="detail__text"></div>
-                <div class="detail__booktour">
-                    <form action="#" class="detail__form">
+            <div class="detail__content row">
+                <div class="detail__text col l-8">
+                    <img src="./sassets/img/ivivu-dubai8-360x480.gif" alt="">
+                    <div class="detail__text-intro" id="intro">
+                        <h3 class="detail__text-title">
+                            Dubai - Xứ sở xa hoa vùng Trung Đông huyền thoại
+                        </h3>
+                        <p class="detail__text-description">
+                            Dubai - một trong những điểm du lịch hấp dẫn nhất trên thế giới, thành phố Dubai của các Tiểu vương quốc Ả Rập nổi tiếng bởi sự xa hoa, hiện đại và giàu có. Tại đây, du khách sẽ có cơ hội chiêm ngưỡng và trải nghiệm cuộc sống với những thứ lớn nhất, đắt nhất và cực kì sang trọng của Dubai – thành phố giàu có bậc nhất Trung Đông. Cùng iVIVU khám phá vùng đất diệu kỳ ngay hôm nay!
+                        </p>
+                    </div>
+                    <div class="detail__text-timeLine" id="timeline">
+                        <h3>NGÀY 1: DUBAI CITY TOUR ( ĂN SÁNG, TRƯA, TỐI)</h3>
+                        <ul>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                        </ul>
+
+                        <h3>NGÀY 1: DUBAI CITY TOUR ( ĂN SÁNG, TRƯA, TỐI)</h3>
+                        <ul>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                            <li>- Bảo tàng Dubai - nơi trưng bày sống động về cuộc sống người dân Dubai trước kia.</li>
+                        </ul>
+                    </div>
+                    <div class="detail__text-visa" id="visa">
+                        <h3 class="detail__text-title">
+                            Thông tin Visa
+                        </h3>
+                        <ul>
+                            <li>- Hộ chiếu (còn thời hạn trên 6 tháng tính theo ngày về) + hình 4 x 6: 1 tấm.</li>
+                            <li>- Giấy kết hôn (vợ chồng đi chung – nếu có).</li>
+                            <li>- Trẻ em phải có kèm theo bản sao khai sinh, giấy cho phép đi du lịch của bố mẹ.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="detail__booktour col l-4">
+                    <form action="#" class="detail__form ">
                         <h3 class="detail__form-title">Lịch khởi hành & giá</h3>
-                        <label for="date">chọn ngày khởi hành</label>
-                        <input type="date" id="date">
-                        
+                        <div class="detail__form-block">
+                            <label for="date">chọn ngày khởi hành</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="detail__form-block">
+                            <label for="people">
+                                người lớn
+                                <span class="detail__form-price" >x 67.900.000</span>
+                            </label>
+                            <div class="detail__form-btns">
+                                <button class="detail__form-btn">-</button>
+                                <span class="detail__form-count">2</span>
+                                <button class="detail__form-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="detail__form-block">
+                            <label for="people">
+                                trẻ em
+                                <span class="detail__form-price" >x 64.730.000</span>
+                            </label>
+                            <div class="detail__form-btns">
+                                <button class="detail__form-btn">-</button>
+                                <span class="detail__form-count">2</span>
+                                <button class="detail__form-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="detail__form-total">
+                          <span>tổng cộng</span>
+                          <span class="detail__form-price">200.530.000 VND</span>
+                        </div>
+
+                        <div class="btn__requests">
+                            <button type="submit" class="btn__request btn__request--white">liên hệ tư vấn</button>
+                            <button type="submit" class="btn__request btn__request--yellow">Yêu cầu đặt</button>
+                            
+                        </div>
                     </form>
                 </div>
             </div>
@@ -228,11 +296,34 @@
             </div>
         </div>
         <!-- end footer -->
-
+        <div class="modal">
+            <div class="modal__content">
+                <button type="submit" class="modal__btn-close">
+                    close
+                </button>
+                <h3 class="modal__title">
+                    Yêu cầu tư vấn
+                </h3>
+                <sapn>Quý khách vui lòng nhập thông tin liên hệ bên dưới</sapn>
+                <form action="#" class="modal__form">
+                    <label for="name">Họ & Tên *</label>
+                    <input type="text" id="name" >
+                    <label for="phone">Điện thoại *</label>
+                    <input type="text" id="phone" >
+                    <label for="email">Email</label>
+                    <input type="text" id="email" >
+                    <label for="requets">Yêu cầu khác</label>
+                    <input type="text" id="requets" >
+                    <button type="submit">
+                        gửi yêu cầu
+                    </button>
+                </form>
+            </div>
+        </div>
         
-
+        
         <!-- end main -->
     </div>
 </body>
-
+<script src="./sassets/js/js.js"></script>
 </html>
